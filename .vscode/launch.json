@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html in Brave",
+            "runtimeExecutable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+            "file": "c:\\Users\\polla\\OneDrive\\Desktop\\Rehla Website\\Hielo-1.0.0\\index.html"
+        }
+    ]
+}
+
