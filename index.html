@@ -1,10 +1,78 @@
 <!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
---><html><head><title>Rehla - Outings & Trips</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css"></head><body>
+<html>
+	<head>
+		<title>Rehla - Outings & Trips</title>
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body>
+<link rel="icon" type="image/png" href="images/logo.png">
+<style>
+    /* Modern Animations */
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 
+    /* Banner Text Load Animation */
+    .banner article .inner {
+        animation: fadeInUp 1.2s ease-out forwards;
+    }
+
+    /* Scroll Reveal Class */
+    .reveal-element {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    }
+    .reveal-element.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Hover Effects */
+    .box {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .feature .icon {
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+    }
+    .feature:hover .icon {
+        transform: scale(1.3) rotate(5deg);
+        color: #089EA7;
+    }
+
+    /* Modern Button Design */
+    .button.special {
+        background: #089EA7 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 50px !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+        padding: 0 3rem !important;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+    .button.special:hover {
+        background: #264653 !important;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+    }
+</style>
+</head><body>
 		<!-- Header -->
 			<header id="header" class="alt"><div class="logo"><a href="index.html">Rehla <span>- Outings & Trips</span></a></div>
 				<a href="#menu">Menu</a>
@@ -50,7 +118,7 @@
 			</section><section id="one" class="wrapper style2"><div class="inner">
 					<div class="grid-style">
 
-						<div>
+						<div class="reveal-element">
 							<div class="box">
 								<div class="image fit">
 									<img src="images/pic01.avif" alt="" width="600" height="300"></div>
@@ -58,12 +126,12 @@
 									<header class="align-center"><p>For Tourism Companies & Businesses</p>
 										<h2>Service Provider</h2>
 									</header><p>Become a success partner by joining the Rehla application. This is designed for tourism companies and similar businesses. It requires some legal documents, after which we can start working together, and you will receive profit from the Rehla app.</p>
-									<footer class="align-center"><a href="contact.html" class="button alt">Join Us</a>
+									<footer class="align-center"><a href="contact.html" class="button special">Join Us</a>
 									</footer></div>
 							</div>
 						</div>
 
-						<div>
+						<div class="reveal-element">
 							<div class="box">
 								<div class="image fit">
 									<img src="images/pic02.avif" alt="" width="600" height="300"></div>
@@ -71,36 +139,35 @@
 									<header class="align-center"><p>For Travelers & Explorers</p>
 										<h2>Explore with Rehla</h2>
 									</header><p>View all our diverse services and special offers, search for the service you like at the price that suits you, and contact the service provider directly to inquire about anything. Your next adventure is just a tap away.</p>
-									<footer class="align-center"><a href="#footer" class="button alt">Download App</a>
+									<footer class="align-center"><a href="#footer" class="button special">Download App</a>
 									</footer></div>
 							</div>
 						</div>
 
 					</div>
 				</div>
-			</section>
-			<!-- Two --><section id="two" class="wrapper style3"><div class="inner">
+			</section><!-- Two --><section id="two" class="wrapper style3"><div class="inner reveal-element">
 					<header class="align-center"><p>Rehla</p>
 						<h2>Your journey starts here</h2>
 					</header></div>
 			</section><!-- Three --><section id="three" class="wrapper style2"><div class="inner">
-					<header class="align-center"><p class="special">Our services are diverse to suit all users</p>
+					<header class="align-center reveal-element"><p class="special">Our services are diverse to suit all users</p>
 						<h2>Choose what you like</h2>
 					</header>
 					<div class="features">
-						<div class="feature">
+						<div class="feature reveal-element">
 							<span class="icon fa-clock-o"></span>
 							<h2>Hourly Adventures</h2>
 						</div>
-						<div class="feature">
+						<div class="feature reveal-element">
 							<span class="icon fa-cutlery"></span>
 							<h2>Food & Dining</h2>
 						</div>
-						<div class="feature">
+						<div class="feature reveal-element">
 							<span class="icon fa-bed"></span>
 							<h2>Hotel Stays</h2>
 						</div>
-						<div class="feature">
+						<div class="feature reveal-element">
 							<span class="icon fa-tag"></span>
 							<h2>Deals & Offers</h2>
 						</div>
@@ -119,4 +186,22 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
+			<script>
+				// Scroll Reveal Animation
+				document.addEventListener("DOMContentLoaded", function() {
+					const observer = new IntersectionObserver((entries) => {
+						entries.forEach(entry => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add('visible');
+								observer.unobserve(entry.target);
+							}
+						});
+					}, { threshold: 0.15 });
+
+					document.querySelectorAll('.reveal-element').forEach(el => {
+						observer.observe(el);
+					});
+				});
+			</script>
+</body></html>
