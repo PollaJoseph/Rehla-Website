@@ -360,14 +360,20 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .header-logo .logo-icon {
-  width: 36px;
-  height: 36px;
-  background: var(--grad-primary);
+  width: 40px;
+  height: 40px;
+  background: transparent;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  overflow: hidden;
+}
+.header-logo .logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .header-logo span {
   color: var(--clr-primary);
@@ -948,6 +954,25 @@ h1, h2, h3, h4, h5, h6 {
 .bento-card--wide { grid-column: span 2; }
 .bento-card--tall { grid-row: span 2; }
 
+/* ── Image Background Pattern ── */
+.bento-card .bento-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform var(--dur-slow) var(--ease-out);
+  z-index: 0;
+}
+.bento-card:hover .bento-bg { transform: scale(1.08); }
+
+.bento-card .bento-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transition: opacity var(--dur-mid);
+}
+.bento-card:hover .bento-overlay { opacity: 0.88; }
+
 .bento-icon {
   position: absolute;
   top: var(--space-md);
@@ -960,6 +985,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   font-size: 1.5rem;
   transition: transform var(--dur-mid) var(--ease-spring);
+  z-index: 2;
 }
 .bento-card:hover .bento-icon { transform: scale(1.15) rotate(-5deg); }
 
@@ -970,12 +996,21 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: var(--clr-text-muted);
   margin-bottom: 0.25rem;
+  position: relative;
+  z-index: 2;
 }
 .bento-title {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--clr-navy);
+  position: relative;
+  z-index: 2;
 }
+
+/* Cards with image backgrounds — force white text */
+.bento-card--img .bento-label { color: rgba(255,255,255,0.75); }
+.bento-card--img .bento-title { color: #fff; }
+
 .bento-card--accent {
   background: var(--grad-primary);
   border-color: transparent;
