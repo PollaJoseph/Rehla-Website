@@ -1,207 +1,450 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Rehla - Outings & Trips</title>
-		<link rel="icon" type="image/png" href="images/logo.png">
-		<meta charset="utf-8">
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body>
-<link rel="icon" type="image/png" href="images/logo.png">
-<style>
-    /* Modern Animations */
-    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(30px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rehla — Your Easiest Guide to Discovering Egypt</title>
+  <meta name="description" content="Rehla is Egypt's leading e-tourism marketplace connecting travelers with top-rated travel agencies. Book trips, safaris, Nile cruises, and more — all in one place.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="icon" type="image/png" href="images/logo.png">
 
-    /* Banner Text Load Animation */
-    .banner article .inner {
-        animation: fadeInUp 1.2s ease-out forwards;
-    }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    /* Scroll Reveal Class */
-    .reveal-element {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-    }
-    .reveal-element.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  <!-- Font Awesome 4 (keeping existing) -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-    /* Hover Effects */
-    .box {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 20px;
-        overflow: hidden;
-    }
-    .box:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    }
+  <!-- Rehla Design System -->
+  <link rel="stylesheet" href="assets/css/rehla.css">
+</head>
+<body>
 
-    .feature .icon {
-        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
-    }
-    .feature:hover .icon {
-        transform: scale(1.3) rotate(5deg);
-        color: #089EA7;
-    }
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<header id="rehla-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <div class="logo-icon">🧭</div>
+        Rehla<span>.</span>
+      </a>
 
-    /* Modern Button Design */
-    .button.special {
-        background: #089EA7 !important;
-        color: #ffffff !important;
-        border: none !important;
-        border-radius: 50px !important;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
-        padding: 0 3rem !important;
-        font-weight: 600;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-    }
-    .button.special:hover {
-        background: #264653 !important;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
-    }
-</style>
-</head><body>
-		<!-- Header -->
-			<header id="header" class="alt"><div class="logo"><a href="index.html">Rehla <span>- Outings & Trips</span></a></div>
-				<a href="#menu">Menu</a>
-			</header><!-- Nav --><nav id="menu"><ul class="links"><li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul></nav><!-- Banner --><section class="banner full"><article><img src="images/slide01.jpg" alt="" width="1440" height="961"><div class="inner">
-						<header><p>Explore the golden shores and vibrant reefs of</p>
-							<h2>Dahab</h2>
-						</header></div>
-				</article><article><img src="images/slide02.jpg" alt="" width="1440" height="961"><div class="inner">
-						<header><p>Journey through history at the iconic Pyramids of</p>
-							<h2>Giza</h2>
-						</header></div>
-				</article><article><img src="images/slide03.jpg" alt="" width="1440" height="961"><div class="inner">
-						<header><p>Discover the tranquil beaches and stunning coastal landscapes of</p>
-							<h2>Nuweiba</h2>
-						</header></div>
-				</article><article><img src="images/slide04.jpg" alt="" width="1440" height="962"><div class="inner">
-						<header><p>Sed cursus aliuam veroeros lorem ipsum nullam</p>
-							<h2>Cairo</h2>
-						</header></div>
-				</article><article><img src="images/slide05.jpg" alt="" width="1440" height="961"><div class="inner">
-						<header><p>Soar above ancient temples in a hot air balloon over</p>
-							<h2>Luxor</h2>
-						</header></div>
-				</article><article><img src="images/slide06.webp" alt="" width="1440" height="962"><div class="inner">
-						<header><p>Experience the coastal charm and rich history of</p>
-							<h2>Alexandria</h2>
-						</header></div>
-				</article><article><img src="images/slide07.jpg" alt="" width="1440" height="962"><div class="inner">
-						<header><p>Discover the serene beaches and vibrant resorts of</p>
-							<h2>Suez</h2>
-						</header></div>
-				</article><article><img src="images/slide08.jpg" alt="" width="1440" height="962"><div class="inner">
-						<header><p>Explore the ancient necropolis and pioneering pyramids of</p>
-							<h2>Dahshur</h2>
-						</header></div>
-				</article>
-			
-			
-			</section><section id="one" class="wrapper style2"><div class="inner">
-					<div class="grid-style">
+      <nav class="header-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#app-download" class="btn btn-primary btn-sm">Get the App</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
 
-						<div class="reveal-element">
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic01.avif" alt="" width="600" height="300"></div>
-								<div class="content">
-									<header class="align-center"><p>For Tourism Companies & Businesses</p>
-										<h2>Service Provider</h2>
-									</header><p>Become a success partner by joining the Rehla application. This is designed for tourism companies and similar businesses. It requires some legal documents, after which we can start working together, and you will receive profit from the Rehla app.</p>
-									<footer class="align-center"><a href="contact.html" class="button special">Join Us</a>
-									</footer></div>
-							</div>
-						</div>
+<!-- Mobile Drawer -->
+<div class="mobile-drawer" id="mobile-drawer">
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+  <div class="mobile-drawer-panel">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">ℹ️ About</a></li>
+      <li><a href="team.html">👥 Team</a></li>
+      <li><a href="contact.html">✉️ Contact</a></li>
+    </ul>
+    <a href="https://play.google.com/store/apps/details?id=com.polla.rahla" class="btn btn-primary" target="_blank" rel="noopener">Download App</a>
+  </div>
+</div>
 
-						<div class="reveal-element">
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic02.avif" alt="" width="600" height="300"></div>
-								<div class="content">
-									<header class="align-center"><p>For Travelers & Explorers</p>
-										<h2>Explore with Rehla</h2>
-									</header><p>View all our diverse services and special offers, search for the service you like at the price that suits you, and contact the service provider directly to inquire about anything. Your next adventure is just a tap away.</p>
-									<footer class="align-center"><a href="#footer" class="button special">Download App</a>
-									</footer></div>
-							</div>
-						</div>
+<!-- ══════════════════════════════════════════
+     HERO SLIDESHOW
+══════════════════════════════════════════ -->
+<section class="hero" id="home">
 
-					</div>
-				</div>
-			</section><!-- Two --><section id="two" class="wrapper style3"><div class="inner reveal-element">
-					<header class="align-center"><p>Rehla</p>
-						<h2>Your journey starts here</h2>
-					</header></div>
-			</section><!-- Three --><section id="three" class="wrapper style2"><div class="inner">
-					<header class="align-center reveal-element"><p class="special">Our services are diverse to suit all users</p>
-						<h2>Choose what you like</h2>
-					</header>
-					<div class="features">
-						<div class="feature reveal-element">
-							<span class="icon fa-clock-o"></span>
-							<h2>Hourly Adventures</h2>
-						</div>
-						<div class="feature reveal-element">
-							<span class="icon fa-cutlery"></span>
-							<h2>Food & Dining</h2>
-						</div>
-						<div class="feature reveal-element">
-							<span class="icon fa-bed"></span>
-							<h2>Hotel Stays</h2>
-						</div>
-						<div class="feature reveal-element">
-							<span class="icon fa-tag"></span>
-							<h2>Deals & Offers</h2>
-						</div>
-					</div>
-				</div>
-			</section><!-- Footer --><footer id="footer"><div class="container">
-					<ul class="icons">
-						<li><a href="https://play.google.com/store/apps/details?id=com.polla.rahla" class="icon fa-android" target="_blank"><span class="label">Google Play</span></a></li>
-						<li><a href="https://apps.apple.com/eg/app/rehla-outings-trips/id6753149665" class="icon fa-apple" target="_blank"><span class="label">App Store</span></a></li>
-						<li><a href="https://www.facebook.com/RehlaApp/" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/rehla_app/" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-						<li><a href="mailto:apprahla@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					</ul></div>
-			</footer><div class="copyright">
-			© 2025 Rehla. All rights reserved. Developed by Polla Joseph.
-		</div>
+  <!-- Slides -->
+  <div class="hero-slides">
+    <div class="hero-slide active" style="background-image:url('images/slide01.jpg')" data-dest="Dahab"></div>
+    <div class="hero-slide" style="background-image:url('images/slide02.jpg')" data-dest="Giza"></div>
+    <div class="hero-slide" style="background-image:url('images/slide05.jpg')" data-dest="Luxor"></div>
+    <div class="hero-slide" style="background-image:url('images/slide03.jpg')" data-dest="Nuweiba"></div>
+    <div class="hero-slide" style="background-image:url('images/slide06.webp')" data-dest="Alexandria"></div>
+  </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
-			<script>
-				// Scroll Reveal Animation
-				document.addEventListener("DOMContentLoaded", function() {
-					const observer = new IntersectionObserver((entries) => {
-						entries.forEach(entry => {
-							if (entry.isIntersecting) {
-								entry.target.classList.add('visible');
-								observer.unobserve(entry.target);
-							}
-						});
-					}, { threshold: 0.15 });
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
 
-					document.querySelectorAll('.reveal-element').forEach(el => {
-						observer.observe(el);
-					});
-				});
-			</script>
-</body></html>
+  <!-- Content -->
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        Egypt's #1 Tourism Marketplace
+      </div>
+      <h1 class="hero-title">
+        Your Easiest Guide to<br>
+        <span class="highlight">Discovering Egypt.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Book authentic trips, safaris, Nile cruises &amp; more — directly from verified agencies. One platform, endless adventures.
+      </p>
+      <div class="hero-ctas">
+        <a href="#audience" class="btn btn-primary btn-lg">Explore Trips</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Partner With Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Destination label -->
+  <div class="hero-destination">
+    <div class="hero-destination-label">Now Viewing</div>
+    <div class="hero-destination-name" id="dest-name">Dahab</div>
+  </div>
+
+  <!-- Dots -->
+  <div class="hero-dots">
+    <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+    <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+    <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+    <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+    <button class="hero-dot" data-slide="4" aria-label="Slide 5"></button>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     STATS STRIP
+══════════════════════════════════════════ -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-count="27" data-suffix="+">27+</span>
+        <span class="stat-label">Destinations Covered</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <span class="stat-number" data-count="50" data-suffix="+">50+</span>
+        <span class="stat-label">Verified Agencies</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <span class="stat-number" data-count="1200" data-suffix="+">1200+</span>
+        <span class="stat-label">Happy Travelers</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <span class="stat-number" data-count="4" data-suffix=".8★">4.8★</span>
+        <span class="stat-label">Average Rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     AUDIENCE — TRAVELER vs AGENCY
+══════════════════════════════════════════ -->
+<section class="section audience-section" id="audience">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="eyebrow">Who Is Rehla For?</span>
+      <h2 class="section-title">One Platform, <span class="text-gradient">Two Experiences</span></h2>
+      <p class="section-subtitle">Whether you're chasing adventures or growing a tourism business, Rehla has you covered.</p>
+    </div>
+
+    <div class="audience-grid">
+      <!-- Traveler Card -->
+      <div class="audience-card audience-card--traveler reveal from-left">
+        <div class="audience-card-bg" style="background-image:url('images/slide05.jpg')"></div>
+        <div class="audience-card-overlay"></div>
+        <div class="audience-card-content">
+          <div class="audience-card-icon">🧳</div>
+          <div class="audience-card-tag">For Travelers &amp; Explorers</div>
+          <h3 class="audience-card-title">Explore with Rehla</h3>
+          <p class="audience-card-desc">
+            Discover curated trips across Egypt, compare prices, read verified reviews, and book securely — all in one tap.
+          </p>
+          <ul class="audience-card-list">
+            <li>Advanced search &amp; smart filters</li>
+            <li>Secure online payment (Cards, Wallets, Fawry)</li>
+            <li>Real-time booking tracking</li>
+            <li>Verified ratings &amp; reviews</li>
+          </ul>
+          <a href="#app-download" class="btn btn-primary">Download the App</a>
+        </div>
+      </div>
+
+      <!-- Agency Card -->
+      <div class="audience-card audience-card--agency reveal from-right">
+        <div class="audience-card-bg" style="background-image:url('images/pic01.avif')"></div>
+        <div class="audience-card-overlay"></div>
+        <div class="audience-card-content">
+          <div class="audience-card-icon">🏢</div>
+          <div class="audience-card-tag">For Tourism Companies &amp; Agencies</div>
+          <h3 class="audience-card-title">Grow Your Business</h3>
+          <p class="audience-card-desc">
+            List your trips, manage bookings automatically, track earnings, and reach thousands of travelers across Egypt.
+          </p>
+          <ul class="audience-card-list">
+            <li>Easy trip &amp; itinerary management</li>
+            <li>Booking requests &amp; order management</li>
+            <li>Financial wallet &amp; payout system</li>
+            <li>Analytics &amp; performance insights</li>
+          </ul>
+          <a href="contact.html" class="btn btn-gold">Become a Partner</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════════ -->
+<section class="section how-section" id="how-it-works">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="eyebrow">Simple Process</span>
+      <h2 class="section-title">How Does <span class="text-gradient">Rehla</span> Work?</h2>
+      <p class="section-subtitle">A seamless experience designed for both travelers and service providers.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="how-tabs reveal">
+      <button class="how-tab active" data-tab="traveler-panel">🧳 For Travelers</button>
+      <button class="how-tab agency" data-tab="agency-panel">🏢 For Agencies</button>
+    </div>
+
+    <!-- Traveler Panel -->
+    <div class="how-panel active" id="traveler-panel">
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Search &amp; Discover</h3>
+          <p class="step-desc">Browse hundreds of verified trips. Filter by destination, budget, date, trip type (Safari, Nile Cruise, Day-use) and ratings.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Book &amp; Pay Securely</h3>
+          <p class="step-desc">Choose your trip and complete checkout with Credit/Debit Cards, E-wallets, or Fawry — all through our secure payment gateway.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-4">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Track &amp; Enjoy</h3>
+          <p class="step-desc">Track your booking status in real time, receive push notifications, then explore Egypt and leave a verified review after your trip.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agency Panel -->
+    <div class="how-panel agency-panel" id="agency-panel">
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Register &amp; List Trips</h3>
+          <p class="step-desc">Submit your legal documents, get approved, then use our dashboard to list trips, set pricing, upload photos, and define schedules.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Receive Bookings</h3>
+          <p class="step-desc">Booking requests arrive automatically. Review customer details, confirm or update reservation status, and communicate with travelers.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-4">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Earn &amp; Withdraw</h3>
+          <p class="step-desc">Your earnings are tracked in your financial wallet after each successful booking. Request payouts directly to your bank account anytime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FEATURES / SERVICES BENTO GRID
+══════════════════════════════════════════ -->
+<section class="section features-section" id="services">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2 class="section-title">Every Type of <span class="text-gradient">Adventure</span></h2>
+      <p class="section-subtitle">From desert safaris to Nile cruises — Rehla covers every corner of Egypt's incredible experiences.</p>
+    </div>
+
+    <div class="bento-grid reveal">
+      <div class="bento-card bento-card--accent">
+        <div class="bento-icon" style="background:rgba(255,255,255,0.2);">🏜️</div>
+        <div class="bento-label">Adventure</div>
+        <div class="bento-title">Desert Safaris</div>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon" style="background:#e0f7f8;">⛵</div>
+        <div class="bento-label">Cruising</div>
+        <div class="bento-title">Nile Cruises</div>
+      </div>
+      <div class="bento-card bento-card--dark bento-card--tall">
+        <div class="bento-icon" style="background:rgba(255,255,255,0.1);">🏨</div>
+        <div class="bento-label">Accommodation</div>
+        <div class="bento-title">Hotel Stays &amp; Resorts</div>
+      </div>
+      <div class="bento-card bento-card--wide">
+        <div class="bento-icon" style="background:#fff3e0;">🍽️</div>
+        <div class="bento-label">Dining</div>
+        <div class="bento-title">Food &amp; Dining Experiences</div>
+      </div>
+      <div class="bento-card bento-card--gold">
+        <div class="bento-icon" style="background:rgba(255,255,255,0.2);">🏖️</div>
+        <div class="bento-label">Relaxation</div>
+        <div class="bento-title">Day-Use Beaches</div>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon" style="background:#f3e5f5;">🏛️</div>
+        <div class="bento-label">Culture</div>
+        <div class="bento-title">Historical Tours</div>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon" style="background:#e8f5e9;">🎁</div>
+        <div class="bento-label">Savings</div>
+        <div class="bento-title">Deals &amp; Special Offers</div>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon" style="background:#e3f2fd;">🕐</div>
+        <div class="bento-label">Short Trips</div>
+        <div class="bento-title">Hourly Adventures</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     APP DOWNLOAD
+══════════════════════════════════════════ -->
+<section class="section app-section" id="app-download">
+  <div class="container">
+    <div class="app-layout">
+      <div class="app-text reveal from-left">
+        <span class="eyebrow">Available Now</span>
+        <h2 class="app-title">Your Next Adventure is<br>Just a Tap Away</h2>
+        <p class="app-subtitle">
+          Download the Rehla app and start exploring Egypt's most incredible destinations. Available on iOS and Android — free to download.
+        </p>
+        <div class="app-buttons">
+          <a href="https://play.google.com/store/apps/details?id=com.polla.rahla" class="store-btn" target="_blank" rel="noopener">
+            <span class="store-icon fa fa-android"></span>
+            <div class="store-text">
+              <small>Get it on</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+          <a href="https://apps.apple.com/eg/app/rehla-outings-trips/id6753149665" class="store-btn" target="_blank" rel="noopener">
+            <span class="store-icon fa fa-apple"></span>
+            <div class="store-text">
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="app-mockup reveal from-right">
+        <div class="phone-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-status">
+              <span class="phone-app-name">🧭 Rehla</span>
+              <span style="color:rgba(255,255,255,0.5);font-size:0.7rem;">9:41</span>
+            </div>
+            <div style="color:rgba(255,255,255,0.65);font-size:0.65rem;margin-bottom:0.5rem;">✨ Featured Trips</div>
+            <div class="phone-card-mini">
+              <div class="phone-card-mini-title">🏜️ Sahara Safari — 2 Days</div>
+              <div class="phone-card-mini-sub">⭐ 4.9 · Siwa Oasis</div>
+              <div class="phone-card-mini-price">From EGP 1,200</div>
+            </div>
+            <div class="phone-card-mini">
+              <div class="phone-card-mini-title">⛵ Nile Cruise — Luxor</div>
+              <div class="phone-card-mini-sub">⭐ 4.8 · 3 Nights</div>
+              <div class="phone-card-mini-price">From EGP 2,500</div>
+            </div>
+            <div class="phone-card-mini">
+              <div class="phone-card-mini-title">🐠 Red Sea Snorkeling</div>
+              <div class="phone-card-mini-sub">⭐ 5.0 · Dahab</div>
+              <div class="phone-card-mini-price">From EGP 450</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer id="rehla-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div>
+        <div class="footer-brand-name">Rehla<span>.</span></div>
+        <p class="footer-tagline">Your easiest guide to discovering Egypt. Connecting travelers with the best local agencies since 2025.</p>
+        <div class="footer-store-row">
+          <a href="https://play.google.com/store/apps/details?id=com.polla.rahla" class="footer-store-btn" target="_blank" rel="noopener">
+            <span class="fa fa-android"></span> Google Play
+          </a>
+          <a href="https://apps.apple.com/eg/app/rehla-outings-trips/id6753149665" class="footer-store-btn" target="_blank" rel="noopener">
+            <span class="fa fa-apple"></span> App Store
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigate -->
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="about.html">ℹ️ About Us</a></li>
+          <li><a href="team.html">👥 Our Team</a></li>
+          <li><a href="contact.html">✉️ Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="#">Desert Safaris</a></li>
+          <li><a href="#">Nile Cruises</a></li>
+          <li><a href="#">Day-Use Beaches</a></li>
+          <li><a href="#">Hotel Stays</a></li>
+          <li><a href="#">Historical Tours</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <div class="footer-col-title">Follow Us</div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/RehlaApp/" class="footer-social-btn" target="_blank" rel="noopener" aria-label="Facebook"><span class="fa fa-facebook"></span></a>
+          <a href="https://www.instagram.com/rehla_app/" class="footer-social-btn" target="_blank" rel="noopener" aria-label="Instagram"><span class="fa fa-instagram"></span></a>
+          <a href="mailto:apprahla@gmail.com" class="footer-social-btn" aria-label="Email"><span class="fa fa-envelope"></span></a>
+        </div>
+        <div class="footer-col-title" style="margin-top:1.5rem;">Contact</div>
+        <ul class="footer-links">
+          <li><a href="mailto:apprahla@gmail.com">apprahla@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copyright">© 2025 Rehla. All rights reserved. Developed by Polla Joseph.</div>
+      <div class="footer-badges">
+        <span class="footer-badge">🇪🇬 Made in Egypt</span>
+        <span class="footer-badge">B2B &amp; B2C</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/rehla.js"></script>
+</body>
+</html>
